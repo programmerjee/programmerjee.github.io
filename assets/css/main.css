@@ -2200,7 +2200,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			height: 20em;
+			height: 12em;
 			border-radius: 0;
 		}
 
@@ -2236,7 +2236,7 @@ input, select, textarea {
 		}
 
 			ul.alt li {
-				border-top: solid 2px #f4f4f4;
+				border-top: solid 2px #888;
 				padding: 0.5em 0;
 			}
 
@@ -2471,11 +2471,11 @@ input, select, textarea {
 		}
 
 		table thead {
-			border-bottom: solid 4px #e4e4e4;
+			border-bottom: solid 4px #888;
 		}
 
 		table tfoot {
-			border-top: solid 4px #e4e4e4;
+			border-top: solid 4px #888;
 		}
 
 		table.alt {
@@ -2653,7 +2653,6 @@ input, select, textarea {
 /* Features */
 
 	.features article {
-		border-top: solid 3px #f4f4f4;
 		margin-bottom: 2.25em;
 		padding-top: 2.25em;
 	}
@@ -2789,7 +2788,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #5ccfb1;
+					border-top: solid 2px #4acaa8;
 					display: block;
 					padding: 0;
 				}
@@ -2825,7 +2824,7 @@ input, select, textarea {
 /* Main */
 
 	#main > section {
-		border-top: solid 6px #f4f4f4;
+		border-top: solid 6px #888;
 	}
 
 		#main > section > .container {
@@ -2836,12 +2835,42 @@ input, select, textarea {
 			border-top: 0;
 		}
 
+/* Cards */
+/* Float four columns side by side */
+.column {
+	float: left;
+	width: 50%;
+	padding: 15px 15px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+	.column {
+	  width: 100%;
+	  display: block;
+	  margin-bottom: 20px;
+	}
+  }
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	text-align: center;
+	background-color: #fdfbfb;
+  }
+
 /* Footer */
 
 	#footer {
-		background: #fafafa;
+		background: #888;
 		border-top: 0;
-		color: #c0c0c0;
+		color: white;
 		overflow: hidden;
 		padding: 4em 0 2em 0;
 	}
@@ -3353,11 +3382,13 @@ input, select, textarea {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
-  color: white;
+  /* color: white; */
 }
 
 /* Add an italic font style to all quotes */
 q {
 	font-style: italic;
-	color:#FFF;
+	font-size: 1.75em;
+	font-family: "Lato", sans-serif;
+	color:rgb(255, 255, 255);
 }
